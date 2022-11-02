@@ -1,14 +1,19 @@
+/******************************************************************************
+		TASK WIKI
+https://github.com/okvera/competitive-programming/wiki/Yandex.Contest-Task-G-%22Interesting-trip%22
+*******************************************************************************/
+
 #include <iostream>
 #include <vector>
 #include <queue>
 
 int BFS()
 {
-  // input parameters
+	// input parameters
 	int n{};      //number of cities (vertexes)
 	int k{};      //max allowable road (rib) length
 	int from{};
-  int to{};
+  	int to{};
 
 	std::cin >> n;
 	if (n < 2)
@@ -17,7 +22,7 @@ int BFS()
 		return 0;
 	}
 
-  // get coordinates
+ 	// get coordinates
 	std::vector<std::pair<int, int>> coords(n);
 	int x{};
 	int y{};
